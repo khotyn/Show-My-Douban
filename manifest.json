@@ -1,0 +1,15 @@
+{
+	"name": "Show My Douban",
+	"version": "0.1",
+	"description": "Add my douban link in the navigation bar of douban.com",
+	"icons":{"48": "icon.png", "16": "icon.png"},
+	"content_scripts": [
+		{
+			"matches": ["*://*.douban.com/*"],
+			"js": ["smd.js"]
+		}	
+	],
+	"permissions": [
+		"tabs", "*://*.douban.com/*"
+	]
+}
